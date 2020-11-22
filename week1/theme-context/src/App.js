@@ -1,11 +1,12 @@
 import React from 'react'
-import FunctionContextComponent from './FunctionContextComponent'
+import ContextApp from './ContextApp'
+import FunctionContextComponent from './ContextApp'
 import {ThemeProvider} from './ThemeContext'
 
 export default function App() {
     return (
         <ThemeProvider> {/*  wrapping logic for handling state   */}
-            <FunctionContextComponent />
+            <ContextApp />
         </ThemeProvider>
     )
 }

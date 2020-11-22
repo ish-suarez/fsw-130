@@ -4,11 +4,11 @@ const ThemeContext = React.createContext()
 const ThemeUpdateContext = React.createContext()
 
 export function useTheme(){ 
-    return useContext(ThemeContext) // Uses Theme ----- Custom Hook
+    return useContext(ThemeContext) // Uses Theme ----- Hook
 }
 
 export function useThemeUpdate(){
-    return useContext(ThemeUpdateContext) // Updates The Theme ---- Custom Hook
+    return useContext(ThemeUpdateContext) // Updates The Theme ---- Custom
 }
 
 export function ThemeProvider ({children}) {
