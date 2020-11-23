@@ -7,6 +7,5 @@ export default function Button() {
         <div className='buttonContainer'>
             <button className='themeButton' onClick={toggleTheme}>Change Theme</button>
         </div>
-        
     )
 }
