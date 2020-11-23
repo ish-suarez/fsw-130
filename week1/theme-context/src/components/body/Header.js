@@ -8,7 +8,7 @@ export default function Header() {
     const themeStyles = {
         backgroundColor: darkTheme ? '#333' : '#CCC',
         color: darkTheme ? '#CCC' : '#333',
-        padding: '2rem',
+        padding: '2rem'
     }
     return (
         <div className='headerContainer'>

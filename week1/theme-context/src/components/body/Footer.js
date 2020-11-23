@@ -8,7 +8,7 @@ export default function Footer() {
     const themeStyles = {
         backgroundColor: darkTheme ? '#333' : '#CCC',
         color: darkTheme ? '#CCC' : '#333',
-        padding: '2rem',
+        padding: '2rem'
     }
     return (
         <footer className='footerContainer' style={themeStyles}> 
