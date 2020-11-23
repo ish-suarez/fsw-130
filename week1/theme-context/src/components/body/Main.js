@@ -14,13 +14,13 @@ export default function Main() {
         margin: 'auto'
     }
     return (
-            <main className='mainContainer' style={themeStyles}> 
-                <h1>We Have Two Themes</h1>
-                <ul>
-                    <li>Light</li>
-                    <li>Dark</li>
-                </ul>
-                <Button />
-            </main>
+        <main className='mainContainer' style={themeStyles}> 
+            <h1>We Have Two Themes</h1>
+            <ul>
+                <li>Light</li>
+                <li>Dark</li>
+            </ul>
+            <Button />
+        </main>
     )
 }

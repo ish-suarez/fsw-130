@@ -2,9 +2,13 @@ body {
     margin: 0;
 }
 
+button {
+    font-size: 25px;
+}
+
 .buttonContainer {
     margin: 30px auto ;
-    width: 120px;
+    width: fit-content;
 }
 
 .themeButton {

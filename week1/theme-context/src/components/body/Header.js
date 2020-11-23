@@ -11,10 +11,8 @@ export default function Header() {
         padding: '2rem'
     }
     return (
-        <div className='headerContainer'>
-            <header style={themeStyles}>
-                <h1>Hello Welcome To Theme Swap</h1>
-            </header>
-        </div>
+        <header className='headerContainer' style={themeStyles}>
+            <h1>Hello Welcome To Theme Swap</h1>
+        </header>
     )
 }
