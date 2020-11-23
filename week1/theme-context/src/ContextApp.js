@@ -1,12 +1,11 @@
 // Functional Context
 import React from 'react'
-import {useTheme, useThemeUpdate} from './ThemeContext'
+import './components/styles.css'
 
 // Components being imported
 import Header from './components/body/Header'
 import Main from './components/body/Main'
 import Footer from './components/body/Footer'
-import Button from './components/Button'
 
 export default function ContextApp(){
     return (
@@ -14,7 +13,6 @@ export default function ContextApp(){
             <Header />
             <Main />
             <Footer />
-            <Button />
         </>
     )
 }

@@ -9,9 +9,12 @@ export default function Header() {
         backgroundColor: darkTheme ? '#333' : '#CCC',
         color: darkTheme ? '#CCC' : '#333',
         padding: '2rem',
-        margin: '2rem'
     }
     return (
-            <header style={themeStyles}>Hello Welcome</header>
+        <div className='headerContainer'>
+            <header style={themeStyles}>
+                <h1>Hello Welcome To Theme Swap</h1>
+            </header>
+        </div>
     )
 }

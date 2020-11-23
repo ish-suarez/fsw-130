@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.buttonContainer {
+    margin: 30px auto ;
+    width: 120px;
+}
+
+.themeButton {
+    outline: none;
+    border-radius: 10px;
+}
+
+.headerContainer {
+    margin: auto;
+    text-align: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+ul {
+    list-style: circle;
+}
+
+.footerContainer {
+    text-align: center;
+}

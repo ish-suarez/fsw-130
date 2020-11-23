@@ -9,9 +9,10 @@ export default function Footer() {
         backgroundColor: darkTheme ? '#333' : '#CCC',
         color: darkTheme ? '#CCC' : '#333',
         padding: '2rem',
-        margin: '2rem'
     }
     return (
-            <footer style={themeStyles}> Ismael inc.</footer>
+        <footer className='footerContainer' style={themeStyles}> 
+            <h2>Ismael inc.</h2>
+        </footer>
     )
 }
