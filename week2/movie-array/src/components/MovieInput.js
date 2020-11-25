@@ -3,9 +3,10 @@ import {MovieContextConsumer} from '../MovieContext'
 
 export default function MovieInput(props) {
     return(
-        <MovieContextConsumer>
+        <MovieContextConsumer className='movieForm'>
             {context => (
                 <form onSubmit={context.handleSubmit}>
+                    <h4>Add Your Movie</h4>
                     <input 
                         name='inputMovie' 
                         value={context.movieInput} 

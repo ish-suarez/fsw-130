@@ -4,7 +4,7 @@ import {MovieContextConsumer} from '../MovieContext'
 
 export default function Main() {
     return(
-        <div className='main'>
+        <main className='main'>
             <h1>Top Movies</h1>
             <MovieContextConsumer>
                 {context => (
@@ -13,6 +13,6 @@ export default function Main() {
                     </ol>
                 )}
             </MovieContextConsumer>
-        </div>
+        </main>
     )
 }

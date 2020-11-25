@@ -4,7 +4,7 @@ const {Provider, Consumer} = React.createContext()
 class MovieContextProvider extends Component {
     state = {
         inputMovie: '',
-        movies: ['Dark Knight', 'End Game', 'Back To The Future']
+        movies: ['End Game', 'Dark Knight', 'Back To The Future']
     }
 
     handleChange = (e) => {
