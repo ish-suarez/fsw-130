@@ -5,8 +5,8 @@ import App from './App'
 import {MovieContextProvider} from './MovieContext'
 
 ReactDOM.render(
-    <MovieContextProvider>
-        <App />
+    <MovieContextProvider> 
+        <App />                      {/* Wrapping App With Context */}
     </MovieContextProvider>,
     document.getElementById('root')
 )

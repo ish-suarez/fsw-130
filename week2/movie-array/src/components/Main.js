@@ -9,7 +9,7 @@ export default function Main() {
             <MovieContextConsumer>
                 {context => (
                     <ol>
-                        {_.map(context.movies, movie => <li>{movie}</li>)}
+                        {_.map(context.movies, movie => <li>{movie}</li>)}    {/* Mapping Over Movie Context */}
                     </ol>
                 )}
             </MovieContextConsumer>

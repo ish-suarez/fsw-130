@@ -5,7 +5,7 @@ export default function MovieInput(props) {
     return(
         <MovieContextConsumer className='movieForm'>
             {context => (
-                <form onSubmit={context.handleSubmit}>
+                <form onSubmit={context.handleSubmit}>      {/* Rendering Form Using Context Consumer */}
                     <h4>Add Your Movie</h4>
                     <input 
                         name='inputMovie' 

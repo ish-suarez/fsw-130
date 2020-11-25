@@ -1,10 +1,12 @@
 import React from 'react'
 
+// Importing Components
 import Header from './components/Header'
 import Main from './components/Main'
 import MovieInput from './components/MovieInput'
 import Footer from './components/Footer'
 
+// Importing Styles
 import './styles.css'
 
 export default function App() {
@@ -12,7 +14,7 @@ export default function App() {
         <div>
             <Header />
             <Main />
-            <MovieInput />
+            <MovieInput />   {/* Displaying Components */}
             <Footer />
         </div>
     )
