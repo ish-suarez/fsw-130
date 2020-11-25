@@ -8,7 +8,7 @@ class MovieContextProvider extends Component {
     }
 
     handleChange = (e) => {
-        this.setState({[e.target.name]: e.target.value})
+        this.setState({[e.target]: e.target.value})
     }
 
     handleSubmit = (e) => {
