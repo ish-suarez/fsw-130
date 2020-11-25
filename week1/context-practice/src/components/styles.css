@@ -1,0 +1,24 @@
+body {    
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.header {
+    margin: 0;
+    grid-column: 1 / -1;
+}
+
+.dark-theme {
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+.light-theme {
+    background-color: whitesmoke;
+    color: #333333;
+}
