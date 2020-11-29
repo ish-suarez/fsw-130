@@ -1,7 +1,7 @@
 import React from 'react'
 import {MovieContextConsumer} from '../MovieContext'
 
-export default function MovieInput(props) {
+export default function MovieInput() {
     return(
         <MovieContextConsumer className='movieForm'>
             {context => (
