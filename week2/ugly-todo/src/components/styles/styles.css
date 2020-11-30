@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: rgba(17, 55, 94, 0.315);
+    padding: 15px;
+}
+
+.outputHeader {
+    text-align: center;
+}
+
+
+.listedTodo {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid;
+    margin: auto;
+    justify-content: space-around;
+    padding: 12px;
+    text-align: center;
+}
+
+
+img {
+    height: 200px;
+    width: 200px;
+}
