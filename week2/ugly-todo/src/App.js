@@ -12,8 +12,8 @@ export default function App() {
     return (
         <div>
             <Header />
-            <Main />
             <TodoInput />
+            <Main />
         </div>
     )
 }
