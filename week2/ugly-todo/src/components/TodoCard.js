@@ -7,12 +7,22 @@ import {TodoConsumer} from '../TodoContext'
 import CommentCard from './CommentCard'
 
 export default function TodoCard (props) {
+// ----------------------------------------------Setting State Hooks For Edit Button And From Input -----------------------
     const [editSelected, setEditSelected] = useState(false)
     const [changeTitle, setTitle] = useState(props.title)
     const [changeDescription, setDescription] = useState(props.description)
-
+// -------------------------------------------Setting 
     const [userComments, setUserComments] = useState([])
     const [inputComment, setInputCommnet] = useState('')
+
+    const removeComment = (comment) => {
+        const indexOfComment = userComments.indexOf(comment)
+        const newData = userComments
+        newData.splice(indexOfComment, 1)
+        setUserComments(newData)
+        setTitle('')
+        
+    }
 
     return (
         <TodoConsumer>
@@ -34,13 +44,13 @@ export default function TodoCard (props) {
                         <h5>Add Comment: </h5>
                         <input value={inputComment} placeholder='Comment' onChange={e => setInputCommnet(e.target.value)} />
                         <button onClick={() => {
-                            setUserComments(userComments => [...userComments, inputComment])
+                            setUserComments(prevState => [...prevState, inputComment])
                             setInputCommnet('')
                             console.log(userComments)
                         }}>Add Comment</button>
                         <h4>Comment Section</h4>
                             {_.map(userComments, item => (
-                                <CommentCard  comments={item}/>
+                                <CommentCard  comments={item} removeComment={removeComment}/>
                             ))}
                     </div>
                     <br/>

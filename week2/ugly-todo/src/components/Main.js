@@ -18,7 +18,6 @@ export default class Main extends Component {
                             {_.map(todo.todos, (item, i) => (
                                 <>
                                     <TodoCard id={item.id} title={item.title} description={item.description} url={item.url} />
-                                    <CommentCard id={item.id} comments={item.comments} />
                                 </>
                             ))}
                         </div>
