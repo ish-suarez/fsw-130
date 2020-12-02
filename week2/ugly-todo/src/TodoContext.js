@@ -34,15 +34,28 @@ class TodoProvider extends Component {
             }
         ]
     } 
-    // ------------------------------------------------------------------------Edit To Do-----------------------------------------------------------------------------------------------------------------
-    editTodo = (e) => {
-            console.log(this.state.todos)
-            const {title, description} = e.target
-            this.setState(_.replace({title: title,}))
-            
-            // console.log(this.state.todos)
-            // this.setState({editSelected: true, id: id })
+    // ---------------------------------------------------------------------Select Edit Todo-----------------------------------------------------------------------------------------------
+    selectEditTodo = (id) => {
+        this.state.todos.forEach( i => {
+            this.setState({editSelected: i.editSelected})
             console.log(this.state)
+        })
+    }
+    // ------------------------------------------------------------------------Edit To Do-----------------------------------------------------------------------------------------------------------------
+    editTodo = (id, title, description) => {
+        let updateTodo = this.state.todos
+        let objectToEdit
+        updateTodo.forEach(item => {
+            if(item.id === id) {
+                // If the id matches, we found the object..
+                objectToEdit = _.indexOf(updateTodo, item)
+            }
+        })
+        let newObject = updateTodo[objectToEdit]
+        newObject.title = title
+        newObject.description = description
+        updateTodo[objectToEdit] = newObject
+        this.setState(updateTodo)
     }
     // ----------------------------------------------------------------------Deleting To Do------------------------------------------------------------------------------------------------------------
     deleteTodo = (id) => {
@@ -74,9 +87,11 @@ class TodoProvider extends Component {
         const handleChange = this.handleChange
         const deleteTodo = this.deleteTodo
         const editTodo = this.editTodo
+        const selectEditTodo = this.selectEditTodo
+
         return (
     // --------------------------------------------------------------------Wrapping Children With Context----------------------------------------------------------------------------------------------------
-            <Provider value={{todos, deleteTodo, handleChange, formSubmit, editTodo}}>  
+            <Provider value={{todos, deleteTodo, handleChange, formSubmit, editTodo, selectEditTodo}}>  
                 {this.props.children}
             </Provider>
         )
