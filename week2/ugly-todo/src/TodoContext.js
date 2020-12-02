@@ -13,24 +13,21 @@ class TodoProvider extends Component {
                 id: 0,
                 title: 'Swat The Flies',
                 description: 'Gotta Get Them All', 
-                url: 'https://images.unsplash.com/photo-1589358141768-0be9002874f0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80', 
-                comments: ['Wow this Is ugly']
+                url: 'https://images.unsplash.com/photo-1589358141768-0be9002874f0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80'
             },
             {
                 editSelected: false,
                 id: 1, 
                 title: 'Trim The House', 
                 description: `Why Can't I Just Hire Someone?`, 
-                url: 'https://images.unsplash.com/photo-1603517432006-7127536be848?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80', 
-                comments: ['Gotta make it look nice']
+                url: 'https://images.unsplash.com/photo-1603517432006-7127536be848?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80'
             },
             {
                 editSelected: false,
                 id: 2, 
                 title: 'A Place I Would Not Live', 
-                description: `We Are So Acostomed To How We Live`, 
-                url: 'https://images.unsplash.com/photo-1566846724210-39d2b2c7ca0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80', 
-                comments: ['Man, I feel bad']
+                description: `We Are So Accustomed To How We Live`, 
+                url: 'https://images.unsplash.com/photo-1566846724210-39d2b2c7ca0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80'
             }
         ]
     } 
@@ -47,7 +44,6 @@ class TodoProvider extends Component {
         let objectToEdit
         updateTodo.forEach(item => {
             if(item.id === id) {
-                // If the id matches, we found the object..
                 objectToEdit = _.indexOf(updateTodo, item)
             }
         })

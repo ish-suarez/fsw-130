@@ -5,6 +5,7 @@ import _ from '../../node_modules/lodash'
 import { TodoConsumer } from '../TodoContext'
 
 import TodoCard from './TodoCard'
+import CommentCard from './CommentCard'
 
 export default class Main extends Component {
     render() {
@@ -15,7 +16,10 @@ export default class Main extends Component {
                     {todo => (
                         <div className='listedTodo'> 
                             {_.map(todo.todos, (item, i) => (
-                                <TodoCard key={item.id} id={item.id} title={item.title} description={item.description} url={item.url} comments={item.comments} />
+                                <>
+                                    <TodoCard id={item.id} title={item.title} description={item.description} url={item.url} />
+                                    <CommentCard id={item.id} comments={item.comments} />
+                                </>
                             ))}
                         </div>
                     )}
