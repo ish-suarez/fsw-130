@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+button {
+    margin: 20px;
+    width: 100px;
+    padding: 5px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+}
+
+td {
+    color: green;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.font-size {
+    font-size: 40px;
+}
+
+.table-color {
+    color: red;
+}
+
+#lap-times {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.24);
+    width: 400px;
+    border-radius: 15px;
+}
