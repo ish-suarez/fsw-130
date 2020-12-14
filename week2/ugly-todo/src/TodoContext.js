@@ -72,8 +72,9 @@ class TodoProvider extends Component {
     formSubmit = (e) => {
         e.preventDefault()
             const {id, title, description, url, todos} = this.state 
-                _.map(todos, (object, i) => object.id = i) 
-                    this.setState({todos: [...todos, {id, title, description, url}]}) 
+            let newId = id + 1
+                _.map(todos, (object, i) => object.id = i ) 
+                    this.setState({todos: [...todos, {newId, title, description, url}]}) 
     }
     // ----------------------------------------------------------------------------Render-------------------------------------------------------------------------------------------------------------
     render() {

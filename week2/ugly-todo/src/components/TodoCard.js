@@ -11,31 +11,36 @@ export default function TodoCard (props) {
     const [editSelected, setEditSelected] = useState(false)
     const [changeTitle, setTitle] = useState(props.title)
     const [changeDescription, setDescription] = useState(props.description)
-// -------------------------------------------Setting 
+// -------------------------------------------Setting State Hooks For Comments ---------------
     const [userComments, setUserComments] = useState([])
     const [inputComment, setInputCommnet] = useState('')
-
-    const removeComment = (comment) => {
-        const indexOfComment = userComments.indexOf(comment)
+// ------------------------------------------Remove Comment------------------------------------------
+    const removeComment = (id) => {
+        const indexOfComment = _.findIndex(userComments, id)
         const newData = userComments
         newData.splice(indexOfComment, 1)
         setUserComments(newData)
         setTitle('')
-        
+        setDescription('')
+        // const indexOfComment = userComments.indexOf(i.i)
+        // const newData = userComments
+        // newData.splice(indexOfComment, 1)
+        // setUserComments(newData)
+        // setTitle('')
     }
 
     return (
         <TodoConsumer>
             {todo => (
                 <div className='mappedTodos' id={props.id} >
-                    <h3>Title: {props.title}</h3>
-                    <h3>Description: {props.description}</h3> 
+                    <h5>Title: {props.title}</h5>
+                    <h5>Description: {props.description}</h5> 
                         {editSelected && 
                             <form>
                                 <input name='title' value={changeTitle} placeholder='Edit Title' onChange={(e) => setTitle(e.target.value)} />
                                 <input name='description' value={changeDescription} placeholder='Edit Description' onChange={(e) => setDescription(e.target.value) } />
                             </form>}
-                    <button onClick={() => {
+                    <button className='editButton' onClick={() => {
                         setEditSelected(!editSelected)
                         todo.editTodo(props.id, changeTitle, changeDescription)
                     }}>Edit To Do</button>
@@ -44,12 +49,12 @@ export default function TodoCard (props) {
                         <h5>Add Comment: </h5>
                         <input value={inputComment} placeholder='Comment' onChange={e => setInputCommnet(e.target.value)} />
                         <button onClick={() => {
-                            setUserComments(prevState => [...prevState, inputComment])
+                            setUserComments(userComments => [...userComments, inputComment])
                             setInputCommnet('')
                             console.log(userComments)
                         }}>Add Comment</button>
                         <h4>Comment Section</h4>
-                            {_.map(userComments, item => (
+                            {userComments.map( item => (
                                 <CommentCard  comments={item} removeComment={removeComment}/>
                             ))}
                     </div>

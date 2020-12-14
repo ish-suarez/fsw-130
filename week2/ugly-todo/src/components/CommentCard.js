@@ -8,10 +8,10 @@ export default function CommentCard(props) {
     // const [inputComment, setInputCommnet] = useState('')
     return (
         <div>
-            <p>{props.comments}</p>
+        {props.comments} -
 
-            <button onClick={() => {
-                props.removeComment(props.comments)
+        <button id={props.comments} onClick={(id) => {
+                props.removeComment(id)
             }}>Delete Comment</button>
         </div>
     )

@@ -5,13 +5,15 @@ import _ from '../../node_modules/lodash'
 import { TodoConsumer } from '../TodoContext'
 
 import TodoCard from './TodoCard'
-import CommentCard from './CommentCard'
+import TodoInput from './TodoInput'
 
 export default class Main extends Component {
     render() {
         return(
             <main>
-                <h3 className='outputHeader'>List Of To Dos</h3>
+                
+                <TodoInput />
+                
                 <TodoConsumer>
                     {todo => (
                         <div className='listedTodo'> 
