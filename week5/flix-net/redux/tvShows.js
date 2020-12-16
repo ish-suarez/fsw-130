@@ -31,7 +31,7 @@ export default function tvShowReducer(tvShows = initialState, action) {
             return [...tvShows, action.data]
             break;
         case 'REMOVE_TV_SHOW':             
-            const updatedArr = tvShows.filter(tvShow => tvShow.toLowerCase() !== action.data.toLowerCase())
+            const updatedArr = tvShows.filter(tvShow => tvShow.toLowerCase() !== action.data.toLowerCase());
             return updatedArr
             break;
         case 'GET_ALL_TV_SHOWS': 

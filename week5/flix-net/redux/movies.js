@@ -31,7 +31,7 @@ export default function moviesReducer(movies = initialState, action) {
             return [...movies, action.data]
             break;
         case 'REMOVE_MOVIE':             
-            const updatedArr = movies.filter(movie => movie.toLowerCase() !== action.data.toLowerCase())
+            const updatedArr = movies.filter(movie => movie.toLowerCase() !== action.data.toLowerCase());
             return updatedArr;
             break;
         case 'GET_ALL_MOVIES':

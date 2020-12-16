@@ -2,7 +2,7 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
-// ------------------------------------- Importing Redux, comvineReducers and createStore
+// ------------------------------------- Importing Redux, combineReducers and createStore
 const redux = require('redux');
 const {combineReducers, createStore} = redux;
 
@@ -12,8 +12,8 @@ import tvShowsReducer from './tvShows.js';
 
 // ------------------------------------ Setting Root Reducers
 const rootReducer = combineReducers({
-    movies: moviesReducer,
-    tvShows: tvShowsReducer
+    moviesReducer,
+    tvShowsReducer
 })
 
 // ------------------------------------ Creating Store

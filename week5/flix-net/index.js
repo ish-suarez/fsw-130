@@ -12,16 +12,16 @@ store.dispatch(getAllMovies());
 // ----------------------------------- Adding One Movie
 store.dispatch(addMovie('Iron Man'));
 
-// ----------------------------------- Removing One Movie
-store.dispatch(removeMovie('Fast and Furious'))
+// // ----------------------------------- Removing One Movie
+store.dispatch(removeMovie('Fast and Furious'));
 
 // -------------------------------------------------- TV Show Dispatches
 // ----------------------------------- Getting All TV Shows
 store.dispatch(getAllTvShows());
 
 // ----------------------------------- Adding One TV Show
-store.dispatch(addTvShow('Lost'))
+store.dispatch(addTvShow('Lost'));
 
-// ----------------------------------- Remove One TV Show
+// // ----------------------------------- Remove One TV Show
 store.dispatch(removeTvShow('Dexter'));
 
