@@ -1,5 +1,6 @@
 // ---------------------------------- Setting Initial State For TV Shows
 const initialState = [ 'Dexter', 'Avatar the Last Airbender' ]
+
 // ---------------------------------- Adding A TV Show
 export function addTvShow(tvShow) {
     return {
@@ -7,6 +8,7 @@ export function addTvShow(tvShow) {
         data: tvShow
     }
 }
+
 // ---------------------------------- Removing TV Show
 export function removeTvShow(tvShow) {
     return {
@@ -14,12 +16,14 @@ export function removeTvShow(tvShow) {
         data: tvShow
     }
 }
+
 // ---------------------------------- Getting All TV Shows
 export function getAllTvShows() {
     return {
         type: 'GET_ALL_TV_SHOWS'
     }
 }
+
 // ------------------------------------------------------------------- Setting Initial StateSetting Initial State
 export default function tvShowReducer(tvShows = initialState, action) {
     switch(action.type) {

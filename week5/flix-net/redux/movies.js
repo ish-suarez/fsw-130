@@ -1,5 +1,6 @@
 // ---------------------------------- Setting Initial State For Movies
 const initialState = [ 'Seven Pounds', 'Fast and Furious']
+
 // ---------------------------------- Adding A Movie  
 export function addMovie(movie) {
     return {
@@ -7,6 +8,7 @@ export function addMovie(movie) {
         data: movie
     }
 }
+
 // ---------------------------------- Removing Movie
 export function removeMovie(movie) {
     return {
@@ -14,12 +16,14 @@ export function removeMovie(movie) {
         data: movie
     }
 }
+
 // ---------------------------------- Getting All Movies
 export function getAllMovies() {
     return {
         type: 'GET_ALL_MOVIES'
     }
 }
+
 // ---------------------------------------------------------------------- Movie Reducer
 export default function moviesReducer(movies = initialState, action) {
     switch(action.type) {
