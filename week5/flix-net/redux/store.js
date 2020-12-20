@@ -7,6 +7,8 @@ const redux = require('redux');
 const {combineReducers, createStore} = redux;
 
 // ------------------------------------- Importing Movie and TV Shows To Be Used
+// const moviesReducer = requrie('./movies');
+// const tvShowsReducer = requrie('./tvShows');
 import moviesReducer from './movies.js';
 import tvShowsReducer from './tvShows.js';
 
@@ -17,7 +19,7 @@ const rootReducer = combineReducers({
 })
 
 // ------------------------------------ Creating Store
-const store = createStore(rootReducer)
+export const store = createStore(rootReducer)
 store.subscribe(() => {
     console.log(store.getState())
 })

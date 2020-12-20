@@ -2,7 +2,7 @@
 const initialState = [ 'Dexter', 'Avatar the Last Airbender' ]
 
 // ---------------------------------- Adding A TV Show
-export function addTvShow(tvShow) {
+export const addTvShow =(tvShow) => {
     return {
         type: 'ADD_TV_SHOW',
         data: tvShow
@@ -10,7 +10,7 @@ export function addTvShow(tvShow) {
 }
 
 // ---------------------------------- Removing TV Show
-export function removeTvShow(tvShow) {
+export const removeTvShow = (tvShow) => {
     return {
         type: 'REMOVE_TV_SHOW',
         data: tvShow
@@ -18,7 +18,7 @@ export function removeTvShow(tvShow) {
 }
 
 // ---------------------------------- Getting All TV Shows
-export function getAllTvShows() {
+export const getAllTvShows = () => {
     return {
         type: 'GET_ALL_TV_SHOWS'
     }

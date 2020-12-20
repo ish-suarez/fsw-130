@@ -1,9 +1,14 @@
 // ------------------------------------ Importing Redux Store
 import store from './redux/store.js';
 
+// const store = require('./redux/store')
+
 // ------------------------------------ Importing Pure Functions From Movies and Tv Shows
 import { addMovie, removeMovie, getAllMovies } from './redux/movies.js';
 import { addTvShow, removeTvShow, getAllTvShows } from './redux/tvShows.js';
+
+// const { addMovie, removeMovie, getAllMovies } = require( './redux/movies.js');
+// const { addTvShow, removeTvShow, getAllTvShows } = require( './redux/tvShows.js');
 
 // --------------------------------------------------- Movie Dispatches
 // ----------------------------------- Getting All Movies

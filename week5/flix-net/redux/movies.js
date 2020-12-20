@@ -2,7 +2,7 @@
 const initialState = [ 'Seven Pounds', 'Fast and Furious']
 
 // ---------------------------------- Adding A Movie  
-export function addMovie(movie) {
+export const addMovie = (movie) => {
     return {
         type: 'ADD_MOVIE',
         data: movie
@@ -10,7 +10,7 @@ export function addMovie(movie) {
 }
 
 // ---------------------------------- Removing Movie
-export function removeMovie(movie) {
+export const removeMovie = (movie) => {
     return {
         type: 'REMOVE_MOVIE',
         data: movie
@@ -18,7 +18,7 @@ export function removeMovie(movie) {
 }
 
 // ---------------------------------- Getting All Movies
-export function getAllMovies() {
+export const getAllMovies = () => {
     return {
         type: 'GET_ALL_MOVIES'
     }
