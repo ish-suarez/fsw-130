@@ -1,0 +1,23 @@
+.contact-card-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+}
+
+.contact {
+    margin: auto;
+    text-align: center;
+    width: 350px;
+    margin: 10px auto ;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    padding: 5px;
+}
+
+.name {
+    display: flex;
+}
+
+button {
+    margin: 5px;
+}
