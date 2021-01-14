@@ -1,0 +1,24 @@
+form {
+    background-color: #d6dbc8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+input {
+    background-color: whitesmoke;
+    border-bottom: 2px solid #ddd;
+    border: 1px solid #ccc;
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+}
+
+button {
+    border: none;
+    border-radius: 360px 360px;
+    box-shadow: 0px 0px 300px #ddd;
+    background-color: red;
+    color: whitesmoke;
+    padding: 7px;
+    margin: 10px;
+}

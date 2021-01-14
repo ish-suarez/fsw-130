@@ -1,0 +1,22 @@
+.movie-container {
+    border-top: none;
+    border-bottom: none;
+    color: red;
+    padding: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 30px;
+    margin: auto;
+    width: 300px;
+}
+
+th {
+    font-size: 30px;
+}
+
+td {
+    font-size: 20px;
+}
+

@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #51c2ab;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 5px;
+}
+
+.link {
+    padding-top: 5px;
+    background-color: #51c2ab;
+    text-decoration: none;
+    color: #F3F9E3;
+    
+}

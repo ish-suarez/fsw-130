@@ -1,0 +1,32 @@
+
+
+.form-container {
+    margin: auto;
+    border-top: none;
+    border-bottom: none;
+}
+
+.movie-container {
+    border-top: none;
+    border-bottom: none;
+    color: red;
+    padding: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 30px;
+    margin: auto;
+    width: 300px;
+}
+
+th {
+    color: white !important;
+    font-size: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    background-color: #3F88C5;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 140px 40px auto 100%;
+}
